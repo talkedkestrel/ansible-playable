@@ -2,6 +2,8 @@
 
 [![ansible-playable](https://raw.githubusercontent.com/mmumshad/ansible-playable/master/client/assets/images/banner.png)](http://ansible-playable.com)
 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ansible-playable/Lobby)
+
 Playable is an Ansible Playbook generator UI developed in MEAN stack using [Yeoman angular-fullstack-generator](https://github.com/angular-fullstack/generator-angular-fullstack) and built using [Docker](https://www.docker.com/). 
 The tool may be used by an individual or a team to 
    - Generate Ansible Playbooks
