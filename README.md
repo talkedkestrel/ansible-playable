@@ -1,6 +1,6 @@
 # Playable
 
-[![ansible-playable](client/assets/images/banner.png)](http://ansible-playable.com)
+[![ansible-playable](https://raw.githubusercontent.com/mmumshad/ansible-playable/master/client/assets/images/banner.png)](http://ansible-playable.com)
 
 Playable is an Ansible Playbook generator UI developed in MEAN stack using [Yeoman angular-fullstack-generator](https://github.com/angular-fullstack/generator-angular-fullstack) and built using [Docker](https://www.docker.com/). 
 The tool may be used by an individual or a team to 
@@ -10,7 +10,7 @@ The tool may be used by an individual or a team to
    - Develop custom modules and test them
    - All the above while enforcing Ansible Best Practices
   
-This is a fun project I started working on from my experience working with Ansible an developing custom modules. I think it will help the Ansible community and am looking forward to assistance in developing and maintaining this project.
+This is a fun project I started working on from my experience working with Ansible and developing custom modules, hoping that it will help the Ansible community.
 
 > Note: This project is in its initial Alpha release. Hence this is only to be used for test purpose and at your own risk.
 
