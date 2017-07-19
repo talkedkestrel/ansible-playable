@@ -5,6 +5,10 @@
       <button class="btn btn-default" ng-click="projectCtrl.showProjectForm()">Create <span class="fa fa-plus"></span></button>
 
       <form ng-show="projectCtrl.showCreateProject">
+        <div class="alert alert-danger" ng-if="projectCtrl.disableAnsibleHostAddition == 'true'">
+          This site is only for demo purpose. The projects you create here may be deleted anytime.
+        </div>
+
         <p class="form-group">
           <label>Project Name</label>
           <input type="text" ng-model="projectCtrl.newProject.name" class="form-control" ng-required="true">
