@@ -75,8 +75,15 @@ export class ProjectComponent {
      * @param project
      */
     projectCtrl.deleteProject = function(project){
+      projectCtrl.msg = "Deleting Project....";
+      projectCtrl.msg_status = "info";
       project.$remove(function(){
         projectCtrl.getProjects();
+        projectCtrl.msg = "Project deleted successfully!";
+        projectCtrl.msg_status = "success";
+      }, function(errResponse){
+        projectCtrl.msg = "Project Deletion Failed. " + errResponse.data;
+        projectCtrl.msg_status = "danger";
       })
     };
 

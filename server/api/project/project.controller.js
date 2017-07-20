@@ -66,7 +66,7 @@ function handleError(res, statusCode) {
   statusCode = statusCode || 500;
   return function(err) {
     logger.error("Error = " + err);
-    res.status(statusCode).send(err);
+    res.status(statusCode).send("Error = " + err);
   };
 }
 
