@@ -1,9 +1,12 @@
 <div class="row" style="margin:20px;">
   <div class="col-md-7">
+    <div class="alert alert-danger" ng-if="!customModulesCtrl.projects.length"> You must create a project first !</div>
     <div ng-show="!customModulesCtrl.showNewModuleForm.value">
-      <div style="display: inline-block"><select class="form-control" ng-model="customModulesCtrl.selectedProjectID" ng-change="customModulesCtrl.projectSelected(customModulesCtrl.selectedProjectID)" ng-options="project._id as project.name for project in customModulesCtrl.projects">
-      </select></div>
-      <button class="btn btn-default" ng-click="customModulesCtrl.newModule()"> New Module <span class="fa fa-plus"></span> </button>
+      <div style="display: inline-block">
+        <select class="form-control" ng-model="customModulesCtrl.selectedProjectID" ng-change="customModulesCtrl.projectSelected(customModulesCtrl.selectedProjectID)" ng-options="project._id as project.name for project in customModulesCtrl.projects">
+        </select>
+      </div>
+      <button ng-disabled="!customModulesCtrl.selectedProjectID" class="btn btn-default" ng-click="customModulesCtrl.newModule()"> New Module <span class="fa fa-plus"></span> </button>
       <button class="btn btn-default" ng-disabled="!customModulesCtrl.selectedModule.module.name || customModulesCtrl.loadingModuleCode" ng-click="customModulesCtrl.editModule()"> Edit Module <span class="fa fa-edit"></span> </button>
 
       <div class="table-responsive">
