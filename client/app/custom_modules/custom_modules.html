@@ -37,16 +37,17 @@
       </div>
     </div>
 
-    <div ng-show="customModulesCtrl.showNewModuleForm.value"  ng-include="'/app/custom_modules/new_module/new_module.html'"></div>
+    <!--<div ng-show="customModulesCtrl.showNewModuleForm.value"  ng-include="'new_module.html'"></div>-->
     <div ng-show="customModulesCtrl.showNewModuleForm.value" >
-      <new-module>
-      </new-module>
+      <!--<new-module>
+      </new-module>-->
+      <new-module></new-module>
     </div>
 
 
   </div>
   <div class="col-md-5">
-    <div ng-readonly="!customModulesCtrl.showNewModuleForm.value" ui-ace="{theme:'twilight',document:'Python',mode:'python',onChange:customModulesCtrl.codeChanged}" ng-model="customModulesCtrl.selectedModule.module_code">
+    <div ng-readonly="!customModulesCtrl.showNewModuleForm.value" ui-ace="{theme:'twilight',document:'Python',mode:'python',onChange:customModulesCtrl.codeChanged,onLoad:customModulesCtrl.aceLoaded}" ng-model="customModulesCtrl.selectedModule.module_code">
 
     </div>
 
