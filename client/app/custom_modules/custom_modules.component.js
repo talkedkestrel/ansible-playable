@@ -3,6 +3,8 @@ const angular = require('angular');
 
 const uiRouter = require('angular-ui-router');
 
+//@require "./**/*.html"
+
 import routes from './custom_modules.routes';
 
 export class CustomModulesComponent {
@@ -101,6 +103,10 @@ export class CustomModulesComponent {
       }
     });
 
+    //To fix a warning message in console
+    customModulesCtrl.aceLoaded = function(_editor){
+      _editor.$blockScrolling = Infinity;
+    };
 
     /**
      * On Code Change

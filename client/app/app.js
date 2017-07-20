@@ -81,7 +81,7 @@ import SearchRoleController from './designer/roles/search_role/search_role.contr
 import ComplexVarModalController from './modals/complex_var_modal/complex_var_modal.controller';
 import VideoController from './modals/video/video.controller';
 
-import NewModuleController from './custom_modules/new_module/new_module.controller';
+import NewModuleComponent from './custom_modules/new_module/new_module.component';
 
 import dictToKeyValueArray from './filters/dictToKeyValueArray/dictToKeyValueArray.filter';
 import dictToKeyValueArraySimple from './filters/dictToKeyValueArraySimple/dictToKeyValueArraySimple.filter';
@@ -102,12 +102,12 @@ import './app.css';
 angular.module('app2App', [ngCookies, ngResource, ngSanitize, uiRouter, uiBootstrap, _Auth, account,
   admin, 'validation.match', 'ui.ace', navbar, footer, main, constants, util, ansi2html, ngAnimate, 'angular-confirm',
   // Components
-  DesignerComponent, ProjectComponent, InventoryComponent, PlaybookComponent, FileBrowserComponent, RolesComponent, RunsComponent, CustomModulesComponent,
+  DesignerComponent, ProjectComponent, InventoryComponent, PlaybookComponent, FileBrowserComponent, RolesComponent, RunsComponent, CustomModulesComponent, NewModuleComponent,
   // Services
   YAML, yamlFile, Projects, ansible, ansi2html, editor, customModules, system,
   // Controllers
   NewInventoryController, NewGroupController, NewHostController, ComplexVarController, NewPlaybookController, ExecutionController, NewPlayController, NewTaskController, ComplexVarModalController,
-  NewFileController, NewRoleController, SearchRoleController, NewModuleController, VideoController,
+  NewFileController, NewRoleController, SearchRoleController, VideoController,
   // Filters
   dictToKeyValueArray, dictToKeyValueArraySimple, keyValueArrayToDict, keyValueArrayToArray, addDotInKey, removeDotInKey, json2yaml,
   // Directives
