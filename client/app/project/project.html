@@ -21,7 +21,7 @@
         <div ng-if="projectCtrl.disableAnsibleHostAddition != 'true'">
           <p class="form-group">
             <label>Ansible Host</label>
-            <input type="text" ng-model="projectCtrl.newProject.ansibleEngine.ansibleHost" class="form-control">
+            <input type="text" placeholder="localhost" ng-model="projectCtrl.newProject.ansibleEngine.ansibleHost" class="form-control">
           <div class="hint">Ansible Controller system - A linux system with Ansible Installed on it. Required if you want to execute Ansible playbooks. You could skip this and still generate playbooks but not test them.</div>
           </p>
 

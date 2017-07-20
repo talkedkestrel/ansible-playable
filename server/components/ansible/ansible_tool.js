@@ -471,8 +471,8 @@ exports.deleteProjectFolder = function(project){
     },(error_response) => {
         deferred.reject(new Error(error_response));
     },ansibleEngine);
-  },() => {
-    deferred.reject(new Error("Directory - " + project_folder +" does not exist."));
+  },(err) => {
+    deferred.reject(new Error(err || "Directory - " + project_folder +" does not exist."));
   },ansibleEngine);
 
   return deferred.promise;

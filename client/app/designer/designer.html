@@ -1,6 +1,7 @@
 <div style="padding:15px;">
   <div class="row">
     <div class="col-md-2">
+      Project: {{ selectedProject.ansibleVersion }}
       <select class="form-control" ng-model="selectedProjectID" ng-change="projectSelected(selectedProjectID)" ng-options="project._id as project.name for project in projects">
       </select>
       <div ng-if="selectedProject.ansibleVersion" class="hint">
@@ -8,7 +9,7 @@
       </div>
 
       <br>
-      <select class="form-control" ng-model="selectedInventoryFileName" ng-options="inventoryFile as inventoryFile for inventoryFile in inventoryFiles" ng-change="inventoryFileSelected(selectedInventoryFileName)">
+      <select ng-if="selectedProject.ansibleVersion" class="form-control" ng-model="selectedInventoryFileName" ng-options="inventoryFile as inventoryFile for inventoryFile in inventoryFiles" ng-change="inventoryFileSelected(selectedInventoryFileName)">
       </select>
       <div ng-if="selectedProject.ansibleVersion" class="hint">
         An inventory file to work with
@@ -16,7 +17,7 @@
 
 
       <br>
-      <div class="btn-group-vertical" style="width:100%"  role="group" aria-label="...">
+      <div ng-if="selectedProject.ansibleVersion" class="btn-group-vertical" style="width:100%"  role="group" aria-label="...">
         <button class="btn btn-default" ui-sref="designer.inventory">Inventory</button>
         <button class="btn btn-default" ui-sref="designer.playbook">Playbooks</button>
         <button class="btn btn-default" ui-sref="designer.roles">Roles</button>
@@ -54,9 +55,15 @@
       <div class="alert alert-danger" ng-if="err_msg">{{err_msg}}</div>
     </div>
 
-    <div class="col-md-10">
+    <div class="col-md-10" ng-if="selectedProject.ansibleVersion">
 
       <div ui-view></div>
+
+    </div>
+
+    <div class="col-md-10" ng-if="!selectedProject.ansibleVersion" style="text-align: center">
+
+      <h2>You must select a project first</h2>
 
     </div>
 
