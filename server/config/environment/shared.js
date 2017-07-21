@@ -37,7 +37,7 @@ exports = module.exports = {
   {
     title: 'Overview',
     type: 'overview',
-    video_id: '6sE0Gqcw_4U'
+    video_id: 'elO8vR5G6n4'
   },
   {
     title: 'Getting Started',
