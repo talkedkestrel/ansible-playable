@@ -11,7 +11,8 @@ RUN echo "root:P@ssw0rd@123" | chpasswd
 RUN apt-get update && \
     apt-get install python-setuptools python-dev build-essential -y && \
     easy_install pip && \
-    pip install ansible
+    pip install ansible && \
+    pip install pyOpenSSL==16.2.0
 
 # -----------------------------------------------------------
 
