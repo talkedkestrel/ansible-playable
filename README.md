@@ -3,9 +3,7 @@
 [![ansible-playable](https://raw.githubusercontent.com/mmumshad/ansible-playable/master/client/assets/images/banner.png)](http://ansible-playable.com)
 
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ansible-playable/Lobby)
-
 [![](https://images.microbadger.com/badges/image/mmumshad/ansible-playable.svg)](https://microbadger.com/images/mmumshad/ansible-playable "Get your own image badge on microbadger.com")
-
 [![](https://images.microbadger.com/badges/version/mmumshad/ansible-playable.svg)](https://microbadger.com/images/mmumshad/ansible-playable "Get your own version badge on microbadger.com")
 
 Playable is an Ansible Playbook generator UI developed in MEAN stack using [Yeoman angular-fullstack-generator](https://github.com/angular-fullstack/generator-angular-fullstack) and built using [Docker](https://www.docker.com/). 
