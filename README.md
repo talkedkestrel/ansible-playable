@@ -41,7 +41,7 @@ The above command should only be used for testing purpose as the changes you mak
 
 To persist data across docker container restarts use the below command to map volumes from docker container on the docker host.
 ```
-  docker run -p 80:8080 -v /data:/data -v /opt/ansible-projects:/opt/ansible-projects mmumshad/ansible-playable
+  docker run -p 80:8080 -v /data/db:/data/db -v /opt/ansible-projects:/opt/ansible-projects mmumshad/ansible-playable
 ```
 
 This command creates two volume maps - /data and /opt/ansible-projects. These directories must pre-exist on the docker host. All changes made by the docker container will now be stored in these folders.
