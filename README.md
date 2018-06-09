@@ -163,6 +163,10 @@ Run `gulp build` for building and `gulp serve` for preview.
 
 Running `gulp test` will run the unit tests with karma.
 
+## Limitations
+
+Only compatible with Ansible version - <2.4. 
+
 ## Improvements
 - Improve Logging
 - Improve Testing - add additional test cases
