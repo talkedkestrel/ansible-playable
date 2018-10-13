@@ -1,5 +1,7 @@
 # Playable
 
+> Note: Only compatible with Ansible version - <2.4.
+
 [![ansible-playable](https://raw.githubusercontent.com/mmumshad/ansible-playable/master/client/assets/images/banner.png)](http://ansible-playable.com)
 
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/ansible-playable/Lobby)
