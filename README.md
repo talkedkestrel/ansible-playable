@@ -1,5 +1,7 @@
 # Playable
 
+> Note: This project needs help in development. If you are interested please join our slack group at: https://join.slack.com/t/kodekloud/shared_invite/enQtNDY2NzI2OTY1NTIxLTQ5NjM1NTg2MDlmMDBhYWY3MWI2NmMwYzA4YTkyY2JiZmRjMTE4ZmU5NzA5ODIzMDc2YzcyZGZlYTgwYTY4ODg
+
 > Note: Only compatible with Ansible version - <2.4.
 
 [![ansible-playable](https://raw.githubusercontent.com/mmumshad/ansible-playable/master/client/assets/images/banner.png)](http://ansible-playable.com)
