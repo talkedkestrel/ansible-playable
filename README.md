@@ -24,7 +24,7 @@ This is a fun project I started working on from my experience working with Ansib
 
 ## Demo
 
-Try a publicly hosted live demo at [ansible-playable.com](http://www.ansible-playable.com) 
+Try a publicly hosted live demo at [playgenerator.superuserdo.io](http://playgenerator.superuserdo.io/) 
 
 > Note: You may create projects and playbooks. But cannot execute or test them. For this you must host a private version of the tool yourself, following instructions below 
 
